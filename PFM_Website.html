@@ -14,7 +14,39 @@
     <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
     <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
 
-    <style type="text/css" class="silex-style"></style>
+    <style type="text/css" class="silex-style">
+        /* ************ *\
+  Drop Down Menu
+\* ************ */
+        
+        .expandable {
+            max-height: 100px;
+        }
+        
+        .expandable:hover {
+            max-height: none;
+        }
+        
+        .expandable .level2 {
+            transition: opacity 1s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .expandable:hover .level2 {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .expandable .text-element:hover {
+            background-color: #FA8902;
+            transition: background-color .5s;
+        }
+        
+        .expandable .normal {
+            padding-top: 8px;
+        }
+    </style>
     <script type="text/javascript" class="silex-script"></script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
